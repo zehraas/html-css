@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .navbar{
+            background-color: #6d5565;
+            color:#1b0d5f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+
+        }
+        .navbar .logo{
+            font-size: 40px;
+            font-weight: bold;
+            color:white;
+
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+    }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+    }
+        .navbar ul li a:hover {
+            color: #f1c40f;
+    }
+        .header{
+            color:#1b0d5f;
+            font-family: "Lucida Console", "Courier New", monospace;
+            text-align: center;
+            font-size: 60px;
+            background-color: rgb(198, 180, 190);
+            font-weight: bold;
+        }
+        .img{
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+            gap: 40px;    
+        }
+        .text{
+            font: italic bold 1.2em "Fira Sans", sans-serif;
+            color:#1b0d5f;
+            font-size: 20px;
+            margin:30px 10px;
+            padding:20px 100px;     
+            border-radius: 10px;
+            box-shadow: 10px 20px 10px #d5d3df;
+            background-color: rgb(247, 247, 247);
+            word-spacing: 7px;
+            line-height: 50px;
+        } 
+       ul li{
+            margin: 10px;
+            padding:10px;
+            font: italic bold 2em "Fira Sans", sans-serif;
+            color:#083303;   
+       }
+       ul li i{
+        color:rgb(222, 222, 62);
+       }
+       .btn .izle {  
+        color: white;
+        background-color: #6d5565;
+        padding: 12px 24px;
+        font-size: 40px;
+        text-decoration: none;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 10px;
+        transition: background-color 0.3s;     
+       }
+       .btn .geridon{
+        color: white;
+        background-color: #6d5565;
+        padding: 12px 24px;
+        font-size: 40px;
+        text-decoration: none;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 10px;
+        transition: background-color 0.3s;
+       }
+       .izle:hover{
+        color:rgb(198, 180, 190);
+        background-color: #6d5565;       
+       }
+       .geridon:hover{
+        color:rgb(198, 180, 190);
+        background-color: #6d5565;
+       }
+       @media (max-width: 768px) {
+        .img {
+         flex-direction: column;
+         align-items: center;
+  }
+}
+    </style>
+</head>
+<body>  
+    <nav class="navbar">
+    <div class="logo">🎬 ZehraTV</div>
+        <ul>
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Filmler</a></li>
+            <li><a href="#">Diziler</a></li>
+            <li><a href="#">Fragmanlar</a></li>
+            <li><a href="#">Belgeseller</a></li>
+            <li><a href="#">Kısa Filmler</a></li>
+            <li><a href="#">Favoriler</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <div class="header">HARRY POTTER</div><br><br> 
+    <div class="img"><img src="https://sm.ign.com/ign_tr/cover/h/harry-pott/harry-potter-the-series_p1mc.jpg">
+          <ul>
+            <li>Yayın Yılı : 2001</li>
+            <li>Yönetmen : Chris Columbus</li>
+            <li>Tür : Fantastik, Macera, Aile</li>   
+            <li>IMDB:  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></li>
+        </ul>
+    </div>  
+ <div class="text">Harry Potter, İngiliz yazar J. K. Rowling tarafından yazılmış yedi fantastik romandan oluşan bir seridir. Romanlar, Hogwarts Cadılık ve Büyücülük Okulu'nda eğitim gören genç büyücü Harry Potter ile arkadaşları Hermione Granger ve Ron Weasley'nin yaşamlarını konu alır. Ana hikâye Harry'nin karanlık bir büyücü olan Lord Voldemort'un ölümsüz olmayı, Sihir Bakanlığı olarak bilinen büyücü yönetim kurulunu devirmeyi ve tüm büyücüleri ve Muggle'ları (büyülü olmayan insanlar) boyun eğdirmeye çalışması ve buna karşı bir hayat mücadelesi vermesidir.</div>
+   <div class="btn">
+   <button onclick="history.back()" class="geridon">← Geri Dön</button>
+   <button onclick="history.forward()" class="izle"> İzle →</button>
+ </div>
+</body>
+</html>
